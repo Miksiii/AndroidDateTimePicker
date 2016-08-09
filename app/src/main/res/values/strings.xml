@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Pracc04</string>
+    <string-array name="countries">
+        <item>Azerbejan</item>
+        <item>Serbia</item>
+        <item>Germany</item>
+        <item>Syria</item>
+        <item>Afganistan</item>
+        <item>Russia</item>
+        <item>United States</item>
+        <item>Croatia</item>
+        <item>Albania</item>
+    </string-array>
 </resources>

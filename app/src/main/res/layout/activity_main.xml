@@ -30,5 +30,12 @@
             android:id="@+id/openTimePickerButton"
             android:layout_gravity="center_horizontal" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="view spinner activity >"
+            android:id="@+id/changeActivityButton"
+            android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
 </RelativeLayout>

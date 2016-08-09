@@ -15,6 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ActivitySpinner">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value=".MainActivity">
+            </meta-data>
+
+            <intent-filter>
+                <action android:name="pracc04.metropolitan.fit.rs.pracc04.ActivitySpinner" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

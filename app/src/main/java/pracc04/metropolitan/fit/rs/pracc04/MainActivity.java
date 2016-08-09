@@ -5,6 +5,7 @@ import java.util.Calendar;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button openDatePickerButton,
-                   openTimePickerButton;
+                   openTimePickerButton,
+                   changeActivityButton;
 
     private int dateYear, dateMonth, dateDay,
                 timeHour, timeMinute, timeSecond;
@@ -37,8 +39,23 @@ public class MainActivity extends AppCompatActivity {
         timeMinute = calendar.get(Calendar.MINUTE);
         timeSecond = calendar.get(Calendar.SECOND);
 
+        onChangeActivityListener();
         onOpenDateListener();
         onOpenTimeListener();
+    }
+
+    public void onChangeActivityListener() {
+        changeActivityButton = (Button) findViewById(R.id.changeActivityButton);
+
+        changeActivityButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent changeActivity = new Intent("pracc04.metropolitan.fit.rs.pracc04.ActivitySpinner");
+                        startActivity(changeActivity);
+                    }
+                }
+        );
     }
 
     public void onOpenDateListener() {
